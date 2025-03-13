@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Il Mio Viaggio</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Overlay che sfoca tutto eccetto il pop-up -->
+  <div id="overlay" class="overlay">
+    <div id="vacation-popup" class="popup">
+      <div>
+        <h2>Scegli la tua Lingua</h2>
+        <img src="italiano.png" alt="Italiano" class="flag-icon" data-lang="it">
+        <img src="inglese.png" alt="Inglese" class="flag-icon" data-lang="en">
+        <img src="francese.png" alt="Francese" class="flag-icon" data-lang="fr">
+        <img src="spagnolo.png" alt="Spagnolo" class="flag-icon" data-lang="es">
+        <img src="portoghese.png" alt="Portoghese" class="flag-icon" data-lang="pt">
+      </div>
+      <h2>Scegli il tipo di Vacanza</h2>
+      <button class="vacation-option" data-vacation="avventura">Avventura</button>
+      <button class="vacation-option" data-vacation="cultura">Cultura</button>
+      <button class="vacation-option" data-vacation="relax">Relax</button>
+    </div>
+  </div>
+
+  <div id="main-content">
+    <header>
+      <h1>Il Mio Viaggio</h1>
+      <p>Scegli il tipo di vacanza che desideri e scopri cosa Cagliari ha da offrire!</p>
+    </header>
+
+    <!-- Sezione che mostra le raccomandazioni e le immagini con i link -->
+    <section id="suggestions">
+      <h2>Le Tue Raccomandazioni</h2>
+      <div id="vacation-content">
+        <!-- Contenuti dinamici e immagini a seconda della scelta -->
+      </div>
+    </section>
+
+    <section id="home">
+      <!-- eventuali altri contenuti -->
+    </section>
+    <footer>
+      <p id="footerMessage">CAGLIARI</p>
+    </footer>
+  </div>
+
+  <!-- Modale per l'immagine ingrandita -->
+  <div id="image-modal" class="overlay">
+    <div class="popup-image">
+      <span id="close-modal">X</span>
+      <img id="modal-image" src="logo_sito.png" alt="WELCOME">
+      <div id="modal-description">WELCOME</div>
+      <!-- Bottone per andare al sito relativo -->
+      <a id="modal-link" href="#" class="btn"></a>
+    </div>
+  </div>
+
+  <!-- Inclusione del file JS esterno -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
